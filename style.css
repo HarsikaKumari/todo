@@ -1,0 +1,37 @@
+* {
+    padding: 5px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    color: white;
+    background-color:#424874;
+    text-align: center;
+  }
+
+  .taskItem {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 2px;
+  }
+
+  h2 {
+    padding-bottom: 30px;
+  }
+
+  .box {
+    background-color: #A6B1E1;
+    margin: auto;
+    height: 300px;
+    width: 300px;
+  }
+  
+  .dlt{
+    font-size: 1px;
+    padding: 5px;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+  }
