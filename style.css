@@ -1,37 +1,115 @@
+/* Universal */
 * {
-    padding: 5px;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  body {
-    color: white;
-    background-color:#424874;
-    text-align: center;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-  .taskItem {
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    gap: 2px;
-  }
+/* Global */
+body {
+  background-color: #e3fdfd;
+}
 
-  h2 {
-    padding-bottom: 30px;
-  }
+/* Navbar */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #71c9ce;
+  padding: 20px 40px;
+}
 
-  .box {
-    background-color: #A6B1E1;
-    margin: auto;
-    height: 300px;
-    width: 300px;
-  }
-  
-  .dlt{
-    font-size: 1px;
-    padding: 5px;
-  }
-  
-  .strike {
-    text-decoration: line-through;
-  }
+/* Navbar -> Logo */
+.logo {
+  font-size: 2.25rem;
+}
+
+/* Navbar -> Add */
+.add {
+  background-color: #a6e3e9;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 2.25rem;
+}
+
+/* Input Container */
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Input Container -> input */
+.taskInput {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 20rem;
+}
+
+/* Input Container -> ul */
+.taskList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 25rem;
+}
+
+/* Input Container -> ul */
+.taskContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* ul -> li */
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  width: 100%;
+}
+
+/* ul -> div */
+.itemDetail {
+  display: flex;
+  gap: 10px;
+}
+
+/* div -> p */
+.task {
+  max-width: 18rem;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.task::-webkit-scrollbar {
+  display: none;
+}
+
+/* li -> btn */
+.dlt {
+  background-color: #a6e3e9;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: white;
+  padding: 5px 20px;
+  cursor: pointer;
+}
+
+/* Strike */
+.strike {
+  text-decoration: line-through;
+}
